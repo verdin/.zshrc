@@ -8,6 +8,7 @@ export PATH=/snap/bin/\:$PATH
 
 export PATH=~/.local/bin\:$PATH
 
+
 #yup
 alias cp='cp -i'
 
@@ -114,4 +115,6 @@ prompt_context() {
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
- 
+
+# this must be last or a least after oh-my-zsh it needs its setup
+source /home/$USER/.local/bin/aws_zsh_completer.sh
